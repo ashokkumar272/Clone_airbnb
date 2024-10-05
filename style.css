@@ -1,0 +1,263 @@
+.container{
+    margin: 10px 30px;
+}
+/* .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+ main{
+    gap: 50px;
+ }
+.nav1{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1 .logo{
+    /* height: 40px; */
+    cursor: pointer;
+    width: 270px;
+    /* border: 1px solid black; */
+    
+}
+.nav1 .logo img{
+    height: 70px;
+}
+.nav1 span{
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+}
+.tabs{
+    gap: 30px;
+
+}
+.tabs section:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.login-buttons section{
+    cursor: pointer;
+}
+.logins{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+#signup{
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 9999px;
+    padding: 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+#signup:hover{
+    box-shadow: 0px 2px rgb(68, 69, 69);
+}
+#signup-menu{
+    border: 1px solid black;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    z-index: 1;
+    top: 80px;
+    right: 40px;
+    width: 200px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px auto;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 9999px;
+    width: 64vw;
+}
+.nav2 span{
+    height: 55px;
+    padding: 8px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 9999px;
+}
+.nav2 span:hover{
+    background-color: rgb(224, 208, 224);
+}
+#where{
+    width: 25%;
+}
+#whos:hover{
+    background-color: rgb(224, 208, 224);
+}
+#whos{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+    border-radius: 9999px;
+    padding: 8px 10px;
+}
+.search{
+    height: 57px;
+    width: 57px;
+    background-color: #00ddff;
+    border-radius: 9999px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(100%);
+    
+}
+#Cin{
+    flex-grow: 1;
+}
+#Cout{
+    flex-grow: 1;
+}
+
+.menu{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    margin: 50px 0px;
+    
+}
+.menu img{
+    height: 30px;
+    filter: invert(.4);
+    
+}
+.menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    gap: 5px;
+    cursor: pointer;
+    width: 84px;
+}
+.menu img:hover{
+    filter: invert(0);
+}
+.highlights img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.highlights{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.past{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    
+}
+.past img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.nav2-alt{
+    display: none;
+}
+
+@media only screen and (max-width: 1370px){
+    .highlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .past{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .nav2-alt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 9999px;
+        width: 100%;
+        gap: 15px;
+    }
+    .nav2{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 1100px){
+    .highlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .past{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .nav1{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .highlights{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .past{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: auto;
+    }
+    .grid-text{
+        justify-content: start;
+    }
+}
+.menu{
+    overflow-x: auto;
+}
+
+
+
