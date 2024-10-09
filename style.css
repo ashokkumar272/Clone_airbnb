@@ -1,5 +1,7 @@
 .container{
     margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
 }
 /* .navbar{
     display: flex;
@@ -135,7 +137,8 @@
     display: flex;
     position: relative;
     gap: 10px;
-    margin: 50px 0px;
+    
+    
     
 }
 .menu img{
@@ -168,6 +171,16 @@
     margin: auto;
     
 }
+.grid-text{
+    line-height: 25px;
+    font-size: 1.1rem;
+    color: black;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+    
+}
 .img{
     display: flex;
     flex-direction: column;
@@ -191,6 +204,35 @@
 }
 .nav2-alt{
     display: none;
+}
+.inspiration{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inspiration-nav{
+    overflow: auto;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+.inspiration ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+
+}
+.inspiration ul li:hover{
+    cursor: pointer;
+}
+
+.inspiration-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+
 }
 
 @media only screen and (max-width: 1370px){
