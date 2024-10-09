@@ -67,17 +67,20 @@
 }
 #signup-menu{
     border: 1px solid black;
-    gap: 15px;
-    padding: 20px;
     background-color: white;
     z-index: 1;
     top: 80px;
     right: 40px;
     width: 200px;
     display: none;
-    /* display: flex; */
     flex-direction: column;
     position: absolute;
+}
+#signup-menu div{
+    padding: 10px;
+}
+#signup-menu div:hover{
+    background-color: grey;
 }
 
 .nav2{
