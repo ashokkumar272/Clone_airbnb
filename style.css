@@ -1,7 +1,13 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
 .container{
     margin: 10px 30px;
     display: flex;
     flex-direction: column;
+    /* margin: 0; */
+    padding: 0;
 }
 /* .navbar{
     display: flex;
@@ -140,9 +146,6 @@
     display: flex;
     position: relative;
     gap: 10px;
-    
-    
-    
 }
 .menu img{
     height: 30px;
@@ -225,6 +228,7 @@ a:link{
     gap: 40px;
     padding: 0;
     margin: 0;
+    font-size: 1.1rem;
 
 }
 .inspiration ul li:hover{
@@ -235,7 +239,14 @@ a:link{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 50px;
-
+}
+footer{
+    text-align: center;
+    background-color: brown;
+    position: sticky;
+    bottom: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 @media only screen and (max-width: 1370px){
@@ -252,6 +263,7 @@ a:link{
         gap: 30px;
         margin: auto;
     }
+
     .nav2-alt{
         display: flex;
         justify-content: center;
@@ -273,6 +285,11 @@ a:link{
         gap: 30px;
         margin: auto;
     }
+    .inspiration-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 50px;
+    }
     .past{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -289,6 +306,11 @@ a:link{
         grid-template-columns: 1fr;
         gap: 30px;
         margin: auto;
+    }
+    .inspiration-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
     }
     .past{
         display: grid;
